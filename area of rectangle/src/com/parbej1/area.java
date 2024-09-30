@@ -1,4 +1,5 @@
 package com.parbej1;
+import java.util.Scanner;
 
 public class area {
     int length;
@@ -10,9 +11,17 @@ public class area {
 
 
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter the length of the rectangle: ");
+        int length = scanner.nextInt();
+        System.out.println("Enter the width of the rectangle: ");
+        int width = scanner.nextInt();
+        
         area suman = new area();
-        int rectanglearea = suman.area(8, 8);
-        System.out.println("The area of rectangle is " + suman.area(8, 8));
+        int rectanglearea = suman.area(length, width);
+        System.out.println("The area of rectangle is " + rectangleArea);
+
+        scanner.close();
 
     }
 }
